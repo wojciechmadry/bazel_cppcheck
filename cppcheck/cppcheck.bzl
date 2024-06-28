@@ -58,7 +58,6 @@ cppcheck_test = rule(
     fragments = ["cpp"],
     attrs = {
         'deps' : attr.label_list(),
-        "cc_toolchain": attr.label(default = Label("@bazel_tools//tools/cpp:current_cc_toolchain")),
         "cppcheck_wrapper": attr.label(default = Label("//cppcheck:cppcheck")),
         "cppcheck_executable": attr.label(default = Label("//:cppcheck_executable")),
         "cppcheck_flags": attr.label(default = Label("//:cppcheck_flags"), allow_files = True),
