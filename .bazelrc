@@ -1,0 +1,2 @@
+# Print all output from tests
+test --test_output=all
